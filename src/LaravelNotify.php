@@ -1,10 +1,10 @@
 <?php
 
-namespace Mckenziearts\Notify;
+namespace Moddyx\Notify;
 
 use Exception;
-use Mckenziearts\Notify\Exceptions\MissingPresetNotificationException;
-use Mckenziearts\Notify\Storage\Session;
+use Moddyx\Notify\Exceptions\MissingPresetNotificationException;
+use Moddyx\Notify\Storage\Session;
 
 class LaravelNotify
 {
