@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify\Facades;
+namespace Moddyx\Notify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
