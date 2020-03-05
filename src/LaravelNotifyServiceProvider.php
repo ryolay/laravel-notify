@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify;
+namespace Moddyx\Notify;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -15,14 +15,14 @@ class LaravelNotifyServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../public' => public_path('vendor/mckenziearts/laravel-notify'),
+            __DIR__ . '/../public' => public_path('vendor/moddyx/laravel-notify'),
         ], 'notify-assets');
         $this->publishes([
-            __DIR__.'/../config/notify.php' => config_path('notify.php'),
+            __DIR__ . '/../config/notify.php' => config_path('notify.php'),
         ], 'notify-config');
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'notify');
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'notify');
+        $this->loadRoutesFrom(__DIR__ . '/routes.php');
         $this->registerBladeDirective();
     }
 
@@ -33,7 +33,7 @@ class LaravelNotifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/notify.php', 'notify');
+        $this->mergeConfigFrom(__DIR__ . '/../config/notify.php', 'notify');
 
         // Register the service the package provides.
         $this->app->singleton('notify', function ($app) {
