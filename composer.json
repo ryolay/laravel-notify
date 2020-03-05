@@ -1,5 +1,5 @@
 {
-  "name": "Mckenziearts/laravel-notify",
+  "name": "Moddyx/laravel-notify",
   "description": "Flexible flash notifications for Laravel",
   "license": "MIT",
   "authors": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Mckenziearts\\Notify\\": "src/"
+      "Moddyx\\Notify\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -29,10 +29,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Mckenziearts\\Notify\\LaravelNotifyServiceProvider"
+        "Moddyx\\Notify\\LaravelNotifyServiceProvider"
       ],
       "aliases": {
-        "Notify": "Mckenziearts\\Notify\\Facades\\LaravelNotify"
+        "Notify": "Moddyx\\Notify\\Facades\\LaravelNotify"
       }
     }
   },
