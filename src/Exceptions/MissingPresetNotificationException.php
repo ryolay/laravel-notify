@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify\Exceptions;
+namespace Moddyx\Notify\Exceptions;
 
 use Exception;
 
