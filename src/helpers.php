@@ -88,7 +88,7 @@ if (! function_exists('notifyJs')) {
      */
     function notifyJs(): string
     {
-        return '<script type="text/javascript" src="'.asset('vendor/mckenziearts/laravel-notify/js/notify.js').'"></script>';
+        return '<script type="text/javascript" src="'.asset('vendor/moddyx/laravel-notify/js/notify.js').'"></script>';
     }
 }
 
@@ -98,6 +98,6 @@ if (! function_exists('notifyCss')) {
      */
     function notifyCss(): string
     {
-        return '<link rel="stylesheet" type="text/css" href="'.asset('vendor/mckenziearts/laravel-notify/css/notify.css').'"/>';
+        return '<link rel="stylesheet" type="text/css" href="'.asset('vendor/moddyx/laravel-notify/css/notify.css').'"/>';
     }
 }
